@@ -1,22 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Vape Shop</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
-    body {
-      font-family: sans-serif;
-      padding: 20px;
-    }
-    h1 {
-      color: #3a3a3a;
-    }
+    body { font-family: Arial, sans-serif; background: #f4f4f4; text-align: center; }
+    h1 { color: #333; }
+    .product { background: #fff; padding: 15px; margin: 15px auto; width: 300px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .product-name { font-weight: bold; font-size: 18px; margin-top: 10px; }
+    .product-price { color: green; font-size: 16px; margin: 5px 0; }
+    .product-image { width: 100%; border-radius: 8px; }
+    button { padding: 5px 10px; border: none; border-radius: 5px; background: #007bff; color: #fff; cursor: pointer; }
+    button:hover { background: #0056b3; }
   </style>
 </head>
 <body>
-  <h1>Добро пожаловать в Vape Shop!</h1>
-  <p>Это мини-приложение в Telegram.</p>
+  <h1>Vape Shop</h1>
+
+  <div class="product">
+    <img src="https://example.com/image1.jpg" alt="Berry Mix" class="product-image">
+    <div class="product-name">Жидкость Berry Mix</div>
+    <div class="product-price">Цена: 800 ₽</div>
+    <button onclick="showDetails('Berry Mix', 'Жидкость с ярким ягодным вкусом, 30 мл, 3 мг никотина.')">Подробнее</button>
+  </div>
+
+  <div class="product">
+    <img src="https://example.com/image2.jpg" alt="Под-система Classic" class="product-image">
+    <div class="product-name">Под-система Classic</div>
+    <div class="product-price">Цена: 1500 ₽</div>
+    <button onclick="showDetails('Под-система Classic', 'Компактная под-система, 2 мл, 2 цвета.')">Подробнее</button>
+  </div>
+
+  <div class="product">
+    <img src="https://example.com/image3.jpg" alt="Атомайзер VapoX" class="product-image">
+    <div class="product-name">Атомайзер VapoX</div>
+    <div class="product-price">Цена: 2200 ₽</div>
+    <button onclick="showDetails('Атомайзер VapoX', 'Современный атомайзер с регулировкой подачи воздуха.')">Подробнее</button>
+  </div>
+
+  <div class="product">
+    <img src="https://example.com/image4.jpg" alt="Жидкость Mint Fresh" class="product-image">
+    <div class="product-name">Жидкость Mint Fresh</div>
+    <div class="product-price">Цена: 850 ₽</div>
+    <button onclick="showDetails('Mint Fresh', 'Освежающая мятная жидкость, 30 мл, 3 мг никотина.')">Подробнее</button>
+  </div>
+
+  <div class="product">
+    <img src="https://example.com/image5.jpg" alt="Под-система Ultra" class="product-image">
+    <div class="product-name">Под-система Ultra</div>
+    <div class="product-price">Цена: 1800 ₽</div>
+    <button onclick="showDetails('Под-система Ultra', 'Ультрасовременная под-система с большим аккумулятором.')">Подробнее</button>
+  </div>
+
+  <div class="product">
+    <img src="https://example.com/image6.jpg" alt="Жидкость Citrus" class="product-image">
+    <div class="product-name">Жидкость Citrus</div>
+    <div class="product-price">Цена: 780 ₽</div>
+    <button onclick="showDetails('Citrus', 'Цитрусовая свежесть, 30 мл, 3 мг никотина.')">Подробнее</button>
+  </div>
+
+  <div class="product">
+    <img src="https://example.com/image7.jpg" alt="Под-система Mini" class="product-image">
+    <div class="product-name">Под-система Mini</div>
+    <div class="product-price">Цена: 1400 ₽</div>
+    <button onclick="showDetails('Под-система Mini', 'Компактная и удобная под-система для новичков.')">Подробнее</button>
+  </div>
+
+  <div class="product">
+    <img src="https://example.com/image8.jpg" alt="Атомайзер Pro" class="product-image">
+    <div class="product-name">Атомайзер Pro</div>
+    <div class="product-price">Цена: 2500 ₽</div>
+    <button onclick="showDetails('Атомайзер Pro', 'Профессиональный атомайзер с регулируемой мощностью.')">Подробнее</button>
+  </div>
+
+  <div class="product">
+    <img src="https://example.com/image9.jpg" alt="Жидкость Vanilla" class="product-image">
+    <div class="product-name">Жидкость Vanilla</div>
+    <div class="product-price">Цена: 800 ₽</div>
+    <button onclick="showDetails('Vanilla', 'Сладкая ванильная жидкость, 30 мл, 3 мг никотина.')">Подробнее</button>
+  </div>
+
+  <div class="product">
+    <img src="https://example.com/image10.jpg" alt="Под-система Max" class="product-image">
+    <div class="product-name">Под-система Max</div>
+    <div class="product-price">Цена: 2000 ₽</div>
+    <button onclick="showDetails('Под-система Max', 'Мощная под-система с большой батареей.')">Подробнее</button>
+  </div>
+
+  <script>
+    function showDetails(name, description) {
+      alert(name + "\n\n" + description);
+    }
+  </script>
 </body>
 </html>
